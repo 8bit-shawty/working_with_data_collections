@@ -34,5 +34,20 @@ let newData = data.slice(1).map(row => {
 //     // return newData
 // })
 console.log(newData)
-newData.pop()
+
+//PART 4
+newData.pop();
 console.log(newData)
+
+newData.push({id: '7', name: 'Bilbo', occupation: 'None', age: '111'})
+console.log(newData)
+
+let totalAge = 0;
+const users = newData.length
+for(let i =0; i < newData.length; i++){
+    // newData[i].age * 1;
+    totalAge += newData[i].age * 1;
+}
+console.log(totalAge)
+let avgAge = totalAge/users
+console.log(avgAge)
